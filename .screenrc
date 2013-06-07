@@ -1,0 +1,30 @@
+startup_message off
+
+shelltitle "$ |zsh"
+hardstatus alwayslastline "%{= Gk} %-Lw%40L>%{b kg} %n %t %{-}%+Lw%-040=%{b km} %l %{.b} %Y/%m/%d %C:%s %A "
+
+escape ^Z^Z
+
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
+
+defbce on
+attrcolor b ".I"
+term xterm-color
+termcapinfo xterm-color 'is=^[r^[m^[2J^[H^[?7h^[?1;4;6l'
+altscreen on
+vbell off
+autodetach on
+defflow off
+termcap * 'G0:S0=\E(%.:E0=\E(B:TY=iso2022'
+crlf off
+sorendition "= Rk"
+
+bind o focus
+bind k kill
+bind s split
+
+screen 0
+screen 1
